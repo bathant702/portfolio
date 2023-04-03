@@ -1,0 +1,8 @@
+* {
+  /* border: 1px;
+  border-color: green;
+  border-style: solid; */
+  /* height & width now includes border & padding */
+  box-sizing: border-box;
+}
+
