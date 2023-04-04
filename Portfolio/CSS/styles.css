@@ -1,8 +1,77 @@
 * {
-  /* border: 1px;
+  /* testing boxes */
+  border: 1px;
   border-color: green;
-  border-style: solid; */
+  border-style: solid;
   /* height & width now includes border & padding */
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  background-color: rgb(81, 81, 81);
+}
+
+/* nav-bar */
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+}
+
+/* splash page */
+.splash-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 800px;
+  background-color: rgb(53, 0, 90);
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+}
+
+/* bio */
+.bio-section {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  background-color: rgb(53, 0, 90);
+  color: white;
+  font-weight: bolder;
+}
+
+/* resume */
+.resume-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-color: rgb(56, 56, 56);
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+}
+
+.bio-font .resume-fount{
+  text-align: center;
+}
+
+/* links */
+.resource-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  font-weight: bolder;
+  text-align: left;
+}
