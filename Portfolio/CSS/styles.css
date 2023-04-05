@@ -17,11 +17,68 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
+  height: 65px;
   background-color: rgb(0, 0, 0);
   color: white;
   font-weight: bolder;
   text-align: center;
+}
+
+/* dropdown menu */
+/* what the dropdown button looks like*/
+.dropbtn {
+  background-color: #249beb;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* button hover*/
+.dropbtn:hover {
+  background-color: #334857;
+}
+
+/* button format */
+.dropdown {
+  position: fixed;
+  display: inline-block;
+}
+
+/* dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #249beb;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+/* button hover #2*/
+.dropdown-content a:hover {
+  background-color: #334857;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display:block;
+  visibility: visible;
 }
 
 /* splash page */
@@ -52,6 +109,7 @@ body {
 /* resume */
 .resume-section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 400px;
@@ -60,13 +118,14 @@ body {
   font-weight: bolder;
 }
 
-.bio-font .resume-fount{
+.bio-font .resume-font{
   text-align: center;
 }
 
 /* links */
 .resource-section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 400px;
@@ -74,4 +133,24 @@ body {
   color: white;
   font-weight: bolder;
   text-align: left;
+}
+
+
+/* scroll button */
+#scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#scroll-top-btn:hover {
+  background-color: #555;
 }
