@@ -15,20 +15,25 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- navigation -->
-    <!-- dropdown menu -->
-    <div class="dropdown" id="navMenu">
-      <button class="dropbtn" id="dropdownBtn">Dropdown</button>
-      <!-- 2nd step: menu links -->
-      <div class="dropdown-content" id="dropdownMenu">
-        <a href="#bio">Bio</a>
-        <a href="#resume">Resume</a>
-        <a href="#resources">Links</a>
-      </div>
-    </div>
 
     <!-- splash page -->
     <section class="splash-page" id="splash">
+
+      <!-- Nav Overlay menu -->
+      <button id="overlay-menu">[ M ]</button>
+      <!-- <span id="overlay-menu">[x]</span> -->
+      <!-- overlay navigation -->
+      <div class="overlay" id="myOverlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" id="closeOverlay">&times;</a>
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="#bio" id="menu-link">Bio</a>
+          <a href="#resume" id="menu-link">Resume</a>
+          <a href="#resources" id="menu-link">Resources</a>
+        </div>
+      </div>
+
       Splash Page
       <div class="container">
         <h1>WELCOME!</h1>
@@ -117,10 +122,13 @@
       </div>
     </section>
 
+
+    <!-- light-mode toggle -->
+    <button id="view-mode-toggle">[ X ]</button>
     <!-- scroll button up-->
-    <button id="scroll-top-btn-home">x</button>
+    <button id="scroll-top-btn-home">[ H ]</button>
     <!-- scroll button home-->
-    <button id="scroll-top-btn-down">x</button>
+    <button id="scroll-top-btn-down">[ D ]</button>
 
     <!-- javascript stuff -->
     <script src="./JS/app.js"></script>

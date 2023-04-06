@@ -1,4 +1,25 @@
 
+
+
+// Overlay Controls
+const overlayMenuOpen = document.getElementById("overlay-menu");
+const overlayMenuClose = document.getElementById("closeOverlay");
+const overlayMenuLink = document.getElementById("menu-link")
+
+//Open Menu
+overlayMenuOpen.addEventListener("click", function openMenu(){
+  document.getElementById("myOverlay").style.width ="100%";
+});
+//Close Menu
+overlayMenuClose.addEventListener("click", function closeMenu(){
+  document.getElementById("myOverlay").style.width="0%";
+});
+//Close Link
+overlayMenuLink.addEventListener("click", function closeLink(){
+  document.getElementById("myOverlay").style.width="0%";
+});
+
+
 // Scroll button home
 const scrollBtnHome = document.getElementById("scroll-top-btn-home");
 scrollBtnHome.addEventListener("click", scrollToTop);
@@ -12,7 +33,6 @@ function scrollToTop(){
 
 // Scroll button Down
 const scrollBtnDown = document.getElementById("scroll-top-btn-down");
-
 scrollBtnDown.addEventListener("click", function () {
   // #bio
   // #resume
@@ -42,37 +62,24 @@ scrollBtnDown.addEventListener("click", function () {
   }
 });
 
-// Dropdown menu -- changing. will be doing an overlay menu
-//make variable of the IDs you need to grab
-const dropdownBtn = document.getElementById("dropdownBtn");
-const dropdownMenu = document.getElementById("dropdownMenu");
-//shows menu via classlist show
-const toggleDropdown = function () {
-  dropdownMenu.classList.toggle("show");
-};
-//event listener to reveal dropdown menu when clicked,
-dropdownBtn.addEventListener("click", function (evt) {
-  toggleDropdown();
-});
-//event listener for when clicking on a link, it opens another window and closes the dropdown menu
-const linksArray = document.querySelectorAll("#dropdownMenu a");
-linksArray.forEach((singleLink) => {
-  singleLink.addEventListener("click", function (evt) {
-    toggleDropdown();
-  });
-});
 
-//Links mouseover
-document.getElementById("project-link-1").addEventListener("mouseover", mouseOver);
-document.getElementById("project-link-2").addEventListener("mouseover", mouseOver);
-document.getElementById("project-link-3").addEventListener("mouseover", mouseOver);
-// document.getElementById("project-link-1").addEventListener("mouseout", mouseOut);
+//light mode toggle
 
-function mouseOver() {
-  document.getElementById("project-link-1").style.color = "red";
-  document.getElementById("project-link-2").style.color = "green";
-  document.getElementById("project-link-3").style.color = "yellow";
-}
+
+
+
+
+// //Links mouseover
+// document.getElementById("project-link-1").addEventListener("mouseover", mouseOver);
+// document.getElementById("project-link-2").addEventListener("mouseover", mouseOver);
+// document.getElementById("project-link-3").addEventListener("mouseover", mouseOver);
+// // document.getElementById("project-link-1").addEventListener("mouseout", mouseOut);
+
+// function mouseOver() {
+//   document.getElementById("project-link-1").style.color = "red";
+//   document.getElementById("project-link-2").style.color = "green";
+//   document.getElementById("project-link-3").style.color = "yellow";
+// }
 
 // current mouse over is working as intended, but its also firing them all at once and is not smooth by and degree. will look into this further tomorrow
-
+//NOTE: attempt later. deadline is coming and this must be finished
