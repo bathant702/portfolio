@@ -64,9 +64,12 @@ scrollBtnDown.addEventListener("click", function () {
 
 
 //light mode toggle
+const colorToggle = document.getElementById("view-mode-toggle");
 
-
-
+colorToggle.addEventListener("click", function lightSwitch(){
+  console.log("Click");
+  document.body.classList.toggle("light-mode");
+});
 
 
 // //Links mouseover

@@ -10,6 +10,7 @@
 body {
   margin: 0;
   background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 /* The Overlay (background) */
@@ -76,7 +77,7 @@ body {
 
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  color: #ffffff;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
@@ -97,8 +98,8 @@ body {
   flex-direction: column;
   align-items: center;
   height: 800px;
-  /* background-color: rgb(53, 0, 90); */
-  color: white;
+  /* background-color: rgb(53, 0, 90);
+  color: white; */
   font-weight: bolder;
   text-align: center;
 }
@@ -111,7 +112,7 @@ body {
   align-items: center;
   height: 800px;
   /* background-color: rgb(53, 0, 90); */
-  color: white;
+  /* color: white; */
   font-weight: bolder;
 }
 
@@ -123,7 +124,7 @@ body {
   align-items: center;
   height: 800px;
   /* background-color: rgb(56, 56, 56); */
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255); */
   font-weight: bolder;
 }
 
@@ -139,7 +140,7 @@ body {
   align-items: center;
   height: 800px;
   /* background-color: rgb(255, 0, 0); */
-  color: white;
+  /* color: white; */
   font-weight: bolder;
   text-align: left;
 }
