@@ -4,7 +4,9 @@
 // Overlay Controls
 const overlayMenuOpen = document.getElementById("overlay-menu");
 const overlayMenuClose = document.getElementById("closeOverlay");
-const overlayMenuLink = document.getElementById("menu-link")
+const overlayBioClose = document.getElementById("menu-link1");
+const overlayResumeClose = document.getElementById("menu-link2");
+const overlayResourceClose = document.getElementById("menu-link3");
 
 //Open Menu
 overlayMenuOpen.addEventListener("click", function openMenu(){
@@ -14,8 +16,16 @@ overlayMenuOpen.addEventListener("click", function openMenu(){
 overlayMenuClose.addEventListener("click", function closeMenu(){
   document.getElementById("myOverlay").style.width="0%";
 });
-//Close Link
-overlayMenuLink.addEventListener("click", function closeLink(){
+//Close Bio
+overlayBioClose.addEventListener("click", function closeBioLink(){
+  document.getElementById("myOverlay").style.width="0%";
+});
+//Close Resume
+overlayResumeClose.addEventListener("click", function closeResumeLink(){
+  document.getElementById("myOverlay").style.width="0%";
+});
+//Close Resources
+overlayResourceClose.addEventListener("click", function closeResourceLink(){
   document.getElementById("myOverlay").style.width="0%";
 });
 
@@ -33,7 +43,7 @@ function scrollToTop(){
 
 // Scroll button Down
 const scrollBtnDown = document.getElementById("scroll-top-btn-down");
-scrollBtnDown.addEventListener("click", function () {
+scrollBtnDown.addEventListener("click", function (){
   // #bio
   // #resume
   // #resources
