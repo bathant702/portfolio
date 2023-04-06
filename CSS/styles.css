@@ -98,8 +98,6 @@ body {
   flex-direction: column;
   align-items: center;
   height: 800px;
-  /* background-color: rgb(53, 0, 90);
-  color: white; */
   font-weight: bolder;
   text-align: center;
 }
@@ -111,8 +109,6 @@ body {
   flex-direction: column;
   align-items: center;
   height: 800px;
-  /* background-color: rgb(53, 0, 90); */
-  /* color: white; */
   font-weight: bolder;
 }
 
@@ -123,8 +119,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 800px;
-  /* background-color: rgb(56, 56, 56); */
-  /* color: rgb(255, 255, 255); */
   font-weight: bolder;
 }
 
@@ -139,8 +133,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 800px;
-  /* background-color: rgb(255, 0, 0); */
-  /* color: white; */
   font-weight: bolder;
   text-align: left;
 }
@@ -182,10 +174,10 @@ body {
   width: 4rem;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
-  padding: 5px 5px;
+  padding: 4px 4px;
   border: none;
   border-radius: 10%;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: bolder;
   transition: background-color 0.3s;
 }
