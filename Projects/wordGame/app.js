@@ -85,10 +85,3 @@ addWordButtonElement.addEventListener("click", respondToWordSubmit);
 resetShiritori.addEventListener("click", resetGame);
 startButton.addEventListener("click", startTimer);
 
-// Scroll button home
-const scrollBtnHome = document.getElementById("scroll-btn-home");
-scrollBtnHome.addEventListener("click", goHome);
-// scroll functions
-function goHome() {
- link = "https://bathant702nv.netlify.app/";
-}
