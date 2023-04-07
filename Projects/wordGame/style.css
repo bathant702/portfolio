@@ -66,6 +66,27 @@ h3 {
   margin-right: 10px;
 }
 
+/* scroll button home*/
+#scroll-btn-home {
+  position: fixed;
+  bottom: 85px;
+  right: 20px;
+  height: 2.9rem;
+  width: 2.9rem;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 4px 4px;
+  border: none;
+  border-radius: 10%;
+  font-size: 1rem;
+  font-weight: 900;
+  transition: background-color 0.3s;
+}
+#scroll-btn-home:hover {
+  background-color: #464646;
+  color: white;
+}
+
 @media screen and (max-width: 800px) {
   .container {
     display: flex;
@@ -89,5 +110,14 @@ h3 {
   
   #reset-game{
     margin-left: .25rem;
+  }
+
+  #scroll-btn-home {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    height: 2.9rem;
+    width: 2.9rem;
+    font-size: .75rem;
   }
 }

@@ -31,7 +31,7 @@ overlayResourceClose.addEventListener("click", function closeResourceLink(){
 
 
 // Scroll button home
-const scrollBtnHome = document.getElementById("scroll-top-btn-home");
+const scrollBtnHome = document.getElementById("scroll-btn-home");
 scrollBtnHome.addEventListener("click", scrollToTop);
 // scroll functions
 function scrollToTop(){
@@ -42,7 +42,7 @@ function scrollToTop(){
 }
 
 // Scroll button Down
-const scrollBtnDown = document.getElementById("scroll-top-btn-down");
+const scrollBtnDown = document.getElementById("scroll-btn-down");
 scrollBtnDown.addEventListener("click", function (){
   // #bio
   // #resume

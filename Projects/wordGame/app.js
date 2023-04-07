@@ -46,7 +46,7 @@ function handleWordAdd(newWord) {
   }
 }
 
-function respondToWordSubmit(){
+function respondToWordSubmit() {
   // Grab the text from the input
   const newWordToAdd = newWordInputElement.value;
   // Call the handleWordAdd function using that text
@@ -56,7 +56,7 @@ function respondToWordSubmit(){
 }
 
 //timer event
-function startTimer(){
+function startTimer() {
   setTimeout(() => {
     let timeLeft = 60;
 
@@ -73,7 +73,7 @@ function startTimer(){
 }
 
 //reset event
-function resetGame(){
+function resetGame() {
   wordsUsed.length = 0;
   renderList();
   clearInterval(countdownTimer);
@@ -84,3 +84,12 @@ function resetGame(){
 addWordButtonElement.addEventListener("click", respondToWordSubmit);
 resetShiritori.addEventListener("click", resetGame);
 startButton.addEventListener("click", startTimer);
+
+// Scroll button home
+const scrollBtnHome = document.getElementById("scroll-btn-home");
+scrollBtnHome.addEventListener("click", goHome);
+// scroll functions
+function goHome() {
+  const link = "https://bathant702nv.netlify.app/";
+  behavior: "smooth";
+}
