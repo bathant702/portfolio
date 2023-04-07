@@ -223,7 +223,7 @@ ul li::before {
   font-weight: 900;
   transition: background-color 0.3s;
 }
-#scroll-top-btn-down:hover {
+#scroll-btn-down:hover {
   background-color: #464646;
   color: white;
 }
