@@ -19,7 +19,7 @@ body {
   margin: 0.75rem;
 }
 
-/* The Overlay (background) */
+/* the overlay (background) */
 #overlay-menu {
   position: fixed;
   top: 20px;
@@ -39,19 +39,19 @@ body {
   color: white;
 }
 
-/* Position the close button (top right corner) */
-.overlay .closebtn {
+/* close button position */
+.closebtn {
   position: absolute;
   top: 20px;
   right: 45px;
   font-size: 60px;
 }
 
+/* overlay reveal*/
 .overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 100%;
   width: 0;
-  position: fixed; 
+  position: fixed;
   z-index: 2;
   left: 0;
   top: 0;
@@ -79,6 +79,7 @@ body {
   transition: 0.3s;
 }
 
+/* overlay effects*/
 .overlay a:hover,
 .overlay a:focus {
   color: #464646;
@@ -87,7 +88,6 @@ body {
 /* splash page */
 .splash-page {
   display: flex;
-  position: relative;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -119,7 +119,21 @@ body {
 .bio-format,
 .resume-format {
   text-align: left;
-  font-size: 14px;
+  font-size: 16px;
+}
+
+/* bullet change*/
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bolder;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 /* links */
@@ -131,6 +145,19 @@ body {
   height: 800px;
   font-weight: bolder;
   text-align: left;
+}
+
+.contact-format{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*icons*/
+.icons {
+  border-radius: 10%;
+  height: 75px;
+  width: 75px;
 }
 
 /* view mode toggle*/
@@ -202,10 +229,45 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-  
+  /* section formatting */
+  .row {
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-title {
+    font-size: 4.75rem;
+    margin: 0.5rem;
+  }
+
+  /* section sizing */
+  .splash-page,
+  .resume-section,
+  .bio-section,
+  .resource-section {
+    height: 900px;
+  }
+
+  .col-sm-4 {
+    display: block;
+  }
+
+  .bio-format,
+  .resume-format {
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: normal;
+  }
+
+  li {
+    display: block;
+  }
+
+  /* buttons */
   #overlay-menu {
     position: fixed;
-    bottom: 20px;
     left: 10px;
     height: 3rem;
     width: 3rem;
@@ -214,7 +276,7 @@ body {
   #view-mode-toggle {
     position: fixed;
     bottom: 20px;
-    left: 20%;
+    left: 18%;
     height: 2.9rem;
     width: 2.9rem;
   }
