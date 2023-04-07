@@ -90,6 +90,5 @@ const scrollBtnHome = document.getElementById("scroll-btn-home");
 scrollBtnHome.addEventListener("click", goHome);
 // scroll functions
 function goHome() {
-  const link = "https://bathant702nv.netlify.app/";
-  behavior: "smooth";
+ link = "https://bathant702nv.netlify.app/";
 }
