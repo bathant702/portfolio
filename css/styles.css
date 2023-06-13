@@ -42,7 +42,7 @@ body {
 /* view mode toggle*/
 #view-mode-toggle {
   position: fixed;
-  top: 20px;
+  top: 100px;
   right: 20px;
   height: 4rem;
   width: 4rem;
@@ -234,10 +234,10 @@ ul li::before {
 
   #view-mode-toggle {
     position: fixed;
-    top: 60px;
+    top: 80px;
     left: 10px;
-    height: 2.9rem;
-    width: 2.9rem;
+    height: 3rem;
+    width: 3rem;
   }
 
 }
