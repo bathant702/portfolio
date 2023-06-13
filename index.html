@@ -1,30 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <title>Tim Bathan</title>
   </head>
   <body>
-    <h1>Hello world. This is the beginning. Version 2.0 of my portfolio.</h1>
-    <container>
-      <div>
-        <h3>About Me</h3>
+    <!-- splash page -->
+    <section class="splash-page" id="splash">
+      <!-- Nav Overlay menu -->
+      <button id="overlay-menu">[M]</button>
+      <!-- overlay navigation -->
+      <div class="overlay" id="myOverlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" id="closeOverlay"
+          >&times;</a
+        >
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="#bio" id="menu-link1">Bio</a>
+          <a href="#resume" id="menu-link2">Resume</a>
+          <a href="#resources" id="menu-link3">Resources</a>
+        </div>
       </div>
-    </container>
-    <container>
-      <div>
-        <h3>Resume + Projects</h3>
-        small blurp plus a list of technical skills
-        
+
+      <div class="container">
+        <h1 class="section-title">#Welcome</h1>
+        <p>- [M]enu - [T]oggle - [H]ome - [D]own -</p>
       </div>
-    </container>
-    <container>
-      <div>
-        <h3>Contacts</h3>
+    </section>
+
+    <!-- bio info -->
+    <section class="bio-section" id="bio">
+      <h1 class="section-title">#About_Me</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col bio-format">
+            <p>
+              Hello! My name is Tim and I enjoy creating things. My interest in
+              design and web development started back in the early 2000s, where
+              I learned and utilized industry tools such as Adobe Illustrator,
+              Dreamweaver, and Premier. Though I did not pursue a higher
+              education in graphic design, my skills and aptitude for the field
+              never left me.
+            </p>
+            <p>
+              Fast forward to 2020, in the middle of the pandemic. While the
+              world was lockdown, I was reigniting my passion for this field.
+              Which leads us to now: I'm currently a student in the General
+              Assembly Full Immersive course for software engineering.
+            </p>
+          </div>
+          <div class="col resume-font">This should be a picture of me.</div>
+        </div>
       </div>
-    </container>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </section>
+
+    <!-- resume -->
+    <section class="resume-section" id="resume">
+      <h1 class="section-title">#Resume</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 resume-format">
+            <h5>#Professional_History</h5>
+            <ul>
+              <li>4 years in sales and marketing.</li>
+              <li>5 years in social services.</li>
+              <li>5 years in mental health.</li>
+              <li>1.5 years in logistics.</li>
+            </ul>
+          </div>
+          <div class="col-sm-4 resume-format">
+            <h5>#Skills_&_Achievements</h5>
+            <ul>
+              <li>HTML, CSS, Javascript</li>
+              <li>
+                Affinity Design Suite
+                <ul>
+                  <li>Designer</li>
+                  <li>Photo</li>
+                  <li>Publisher</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-4 resume-format">
+            <h5>#Links_to_Projects</h5>
+            <ul>
+              <li id="project-link-1">
+                <a href="./Projects/wordGame/index.html">Shiritori</a>
+              </li>
+              <li id="project-link-2">#In_Development_</li>
+              <li id="project-link-3">#In_Development_</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- links -->
+    <section class="resource-section" id="resources">
+      <h1 class="section-title">#Resources</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <ul>
+              <li>
+                <a href="https://openai.com/blog/chatgpt">ChatGPT</a> - AI tool.
+                Super interesting to use for Dungeons and Dragons session.
+              </li>
+              <li>
+                <a href="https://digimonmeta.com/">Digimon Meta</a> - site for
+                understanding the meta for Digimon TCG 2020.
+              </li>
+              <li>
+                <a href="https://digimoncard.dev/">Digimoncard.dev</a> - site
+                for deckbuilding for the Digimon TCG 2020.
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 contact-format">
+            <h5>#Lets_Chat</h5>
+            <div>
+              <a href="bathant702nv@gmail.com"
+                ><img class="icons" src="./Imgs/red-email.webp" alt="email"
+              /></a>
+              <a href="https://www.linkedin.com/in/timothy-bathan-437347223/"
+                ><img class="icons" src="./Imgs/linkedin.png" alt="LinkedIn"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- light-mode toggle -->
+    <button id="view-mode-toggle">[T]</button>
+    <!-- scroll button up-->
+    <button id="scroll-btn-home">[H]</button>
+    <!-- scroll button home-->
+    <button id="scroll-btn-down">[D]</button>
+
+    <!-- javascript stuff -->
+    <script src="./JS/app.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

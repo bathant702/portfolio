@@ -1,0 +1,299 @@
+* {
+  /* testing boxes */
+  /* border: 1px;
+  border-color: green;
+  border-style: solid; */
+  /* height & width now includes border & padding */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: "Inconsolata", monospace;
+}
+
+.section-title {
+  font-size: 3.75rem;
+  margin: 0.75rem;
+}
+
+/* the overlay (background) */
+#overlay-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  height: 4rem;
+  width: 4rem;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 5px 5px;
+  border: none;
+  border-radius: 10%;
+  font-size: 1.5rem;
+  transition: background-color 0.3s;
+}
+#overlay-menu:hover {
+  background-color: #464646;
+  color: white;
+}
+
+/* close button position */
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* overlay reveal*/
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+/* overlay contents in overlay */
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 60px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+/* overlay effects*/
+.overlay a:hover,
+.overlay a:focus {
+  color: #464646;
+}
+
+/* splash page */
+.splash-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 800px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+/* bio */
+.bio-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 800px;
+  font-weight: bolder;
+}
+
+/* resume */
+.resume-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  font-weight: bolder;
+}
+
+.bio-format,
+.resume-format {
+  text-align: left;
+  font-size: 16px;
+}
+
+/* bullet change*/
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bolder;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* links */
+.resource-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  font-weight: bolder;
+  text-align: left;
+}
+
+.contact-format{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*icons*/
+.icons {
+  border-radius: 10%;
+  height: 75px;
+  width: 75px;
+}
+
+/* view mode toggle*/
+#view-mode-toggle {
+  position: fixed;
+  bottom: 160px;
+  right: 20px;
+  height: 2.9rem;
+  width: 2.9rem;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 5px 5px;
+  border: none;
+  border-radius: 10%;
+  font-size: 1rem;
+  font-weight: 900;
+  transition: background-color 0.3s;
+}
+#view-mode-toggle:hover {
+  background-color: #464646;
+  color: white;
+}
+/*light mode*/
+.light-mode {
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+
+/* scroll button up*/
+#scroll-btn-home {
+  position: fixed;
+  bottom: 85px;
+  right: 20px;
+  height: 2.9rem;
+  width: 2.9rem;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 4px 4px;
+  border: none;
+  border-radius: 10%;
+  font-size: 1rem;
+  font-weight: 900;
+  transition: background-color 0.3s;
+}
+#scroll-btn-home:hover {
+  background-color: #464646;
+  color: white;
+}
+
+/* scroll button down*/
+#scroll-btn-down {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  height: 2.9rem;
+  width: 2.9rem;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 5px 5px;
+  border: none;
+  border-radius: 10%;
+  font-size: 1rem;
+  font-weight: 900;
+  transition: background-color 0.3s;
+}
+#scroll-btn-down:hover {
+  background-color: #464646;
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  /* section formatting */
+  .row {
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-title {
+    font-size: 4.75rem;
+    margin: 0.5rem;
+  }
+
+  /* section sizing */
+  .splash-page,
+  .resume-section,
+  .bio-section,
+  .resource-section {
+    height: 900px;
+  }
+
+  .col-sm-4 {
+    display: block;
+  }
+
+  .bio-format,
+  .resume-format {
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: normal;
+  }
+
+  li {
+    display: block;
+  }
+
+  /* buttons */
+  #overlay-menu {
+    position: fixed;
+    left: 10px;
+    height: 3rem;
+    width: 3rem;
+  }
+
+  #view-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    left: 18%;
+    height: 2.9rem;
+    width: 2.9rem;
+  }
+
+  #scroll-btn-home {
+    position: fixed;
+    bottom: 20px;
+    left: 47%;
+    height: 2.9rem;
+    width: 2.9rem;
+  }
+
+  #scroll-btn-down {
+    position: fixed;
+    bottom: 20px;
+    left: 73%;
+    height: 2.9rem;
+    width: 2.9rem;
+  }
+}
