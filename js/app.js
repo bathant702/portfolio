@@ -30,47 +30,47 @@ overlayResourceClose.addEventListener("click", function closeResourceLink(){
 });
 
 
-// Scroll button home
-const scrollBtnHome = document.getElementById("scroll-btn-home");
-scrollBtnHome.addEventListener("click", scrollToTop);
-// scroll functions
-function scrollToTop(){
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-}
+// // Scroll button home
+// const scrollBtnHome = document.getElementById("scroll-btn-home");
+// scrollBtnHome.addEventListener("click", scrollToTop);
+// // scroll functions
+// function scrollToTop(){
+//   window.scrollTo({
+//     top: 0,
+//     behavior: "smooth",
+//   });
+// }
 
-// Scroll button Down
-const scrollBtnDown = document.getElementById("scroll-btn-down");
-scrollBtnDown.addEventListener("click", function (){
-  // #bio
-  // #resume
-  // #resources
-  const bioSection = document.getElementById("bio");
-  const resumeSection = document.getElementById("resume");
-  const resourcesSection = document.getElementById("resources");
+// // Scroll button Down
+// const scrollBtnDown = document.getElementById("scroll-btn-down");
+// scrollBtnDown.addEventListener("click", function (){
+//   // #bio
+//   // #resume
+//   // #resources
+//   const bioSection = document.getElementById("bio");
+//   const resumeSection = document.getElementById("resume");
+//   const resourcesSection = document.getElementById("resources");
 
-  if (window.scrollY < bioSection.offsetTop) {
-    //scroll to bio section if not visible
-    window.scrollTo({
-      top: bioSection.offsetTop,
-      behavior: "smooth",
-    });
-  } else if (window.scrollY < resumeSection.offsetTop) {
-    //scroll to next section
-    window.scrollTo({
-      top: resumeSection.offsetTop,
-      behavior: "smooth",
-    });
-  } else {
-    //scroll to next section
-    window.scrollTo({
-      top: resourcesSection.offsetTop,
-      behavior: "smooth",
-    });
-  }
-});
+//   if (window.scrollY < bioSection.offsetTop) {
+//     //scroll to bio section if not visible
+//     window.scrollTo({
+//       top: bioSection.offsetTop,
+//       behavior: "smooth",
+//     });
+//   } else if (window.scrollY < resumeSection.offsetTop) {
+//     //scroll to next section
+//     window.scrollTo({
+//       top: resumeSection.offsetTop,
+//       behavior: "smooth",
+//     });
+//   } else {
+//     //scroll to next section
+//     window.scrollTo({
+//       top: resourcesSection.offsetTop,
+//       behavior: "smooth",
+//     });
+//   }
+// });
 
 
 //light mode toggle

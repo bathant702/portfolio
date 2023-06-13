@@ -39,6 +39,31 @@ body {
   color: white;
 }
 
+/* view mode toggle*/
+#view-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  height: 4rem;
+  width: 4rem;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  border: none;
+  border-radius: 10%;
+  font-size: 1.5rem;
+  transition: background-color 0.3s;
+}
+#overlay-menu:hover {
+  background-color: #464646;
+  color: white;
+}
+/*light mode*/
+.light-mode {
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+
 /* close button position */
 .closebtn {
   position: absolute;
@@ -160,73 +185,7 @@ ul li::before {
   width: 75px;
 }
 
-/* view mode toggle*/
-#view-mode-toggle {
-  position: fixed;
-  bottom: 160px;
-  right: 20px;
-  height: 2.9rem;
-  width: 2.9rem;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  padding: 5px 5px;
-  border: none;
-  border-radius: 10%;
-  font-size: 1rem;
-  font-weight: 900;
-  transition: background-color 0.3s;
-}
-#view-mode-toggle:hover {
-  background-color: #464646;
-  color: white;
-}
-/*light mode*/
-.light-mode {
-  background-color: white;
-  color: rgb(0, 0, 0);
-}
 
-/* scroll button up*/
-#scroll-btn-home {
-  position: fixed;
-  bottom: 85px;
-  right: 20px;
-  height: 2.9rem;
-  width: 2.9rem;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  padding: 4px 4px;
-  border: none;
-  border-radius: 10%;
-  font-size: 1rem;
-  font-weight: 900;
-  transition: background-color 0.3s;
-}
-#scroll-btn-home:hover {
-  background-color: #464646;
-  color: white;
-}
-
-/* scroll button down*/
-#scroll-btn-down {
-  position: fixed;
-  bottom: 10px;
-  right: 20px;
-  height: 2.9rem;
-  width: 2.9rem;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  padding: 5px 5px;
-  border: none;
-  border-radius: 10%;
-  font-size: 1rem;
-  font-weight: 900;
-  transition: background-color 0.3s;
-}
-#scroll-btn-down:hover {
-  background-color: #464646;
-  color: white;
-}
 
 @media screen and (max-width: 800px) {
   /* section formatting */
@@ -275,25 +234,10 @@ ul li::before {
 
   #view-mode-toggle {
     position: fixed;
-    bottom: 20px;
-    left: 18%;
+    top: 60px;
+    left: 10px;
     height: 2.9rem;
     width: 2.9rem;
   }
 
-  #scroll-btn-home {
-    position: fixed;
-    bottom: 20px;
-    left: 47%;
-    height: 2.9rem;
-    width: 2.9rem;
-  }
-
-  #scroll-btn-down {
-    position: fixed;
-    bottom: 20px;
-    left: 73%;
-    height: 2.9rem;
-    width: 2.9rem;
-  }
 }
