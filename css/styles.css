@@ -16,19 +16,20 @@ body {
 
 .section-title {
   font-size: 3.75rem;
-  margin: 0.75rem;
+  margin: 2rem;
 }
 
 /* the overlay (background) */
+/* overlay menu button*/
 #overlay-menu {
   position: fixed;
-  top: 20px;
-  right: 20px;
-  height: 4rem;
-  width: 4rem;
+  top: 28%;
+  right: 3%;
+  height: 2.75rem;
+  width: 2.75rem;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
-  padding: 5px 5px;
+  padding: 2px;
   border: none;
   border-radius: 10%;
   font-size: 1.5rem;
@@ -42,19 +43,19 @@ body {
 /* view mode toggle*/
 #view-mode-toggle {
   position: fixed;
-  top: 100px;
-  right: 20px;
-  height: 4rem;
-  width: 4rem;
+  top: 43%;
+  right: 3%;
+  height: 2.75rem;
+  width: 2.75rem;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
-  padding: 5px;
+  padding: 2px;
   border: none;
   border-radius: 10%;
   font-size: 1.5rem;
   transition: background-color 0.3s;
 }
-#overlay-menu:hover {
+#view-mode-toggle:hover {
   background-color: #464646;
   color: white;
 }
@@ -62,6 +63,45 @@ body {
 .light-mode {
   background-color: white;
   color: rgb(0, 0, 0);
+}
+
+/* social media*/
+#git-hub-icon {
+  position: fixed;
+  top: 58%;
+  right: 3%;
+  height: 2.75rem;
+  width: 2.75rem;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 2px;
+  border: none;
+  border-radius: 10%;
+  font-size: 1.5rem;
+  transition: background-color 0.3s;
+}
+#git-hub-icon:hover {
+  background-color: #464646;
+  color: white;
+}
+
+#linkedin-icon {
+  position: fixed;
+  top: 71%;
+  right: 3%;
+  height: 2.75rem;
+  width: 2.75rem;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 2px;
+  border: none;
+  border-radius: 10%;
+  font-size: 1.5rem;
+  transition: background-color 0.3s;
+}
+#linkedin-icon:hover {
+  background-color: #464646;
+  color: white;
 }
 
 /* close button position */
@@ -178,14 +218,6 @@ ul li::before {
   align-items: center;
 }
 
-/*icons*/
-.icons {
-  border-radius: 10%;
-  height: 75px;
-  width: 75px;
-}
-
-
 
 @media screen and (max-width: 800px) {
   /* section formatting */
@@ -227,17 +259,34 @@ ul li::before {
   /* buttons */
   #overlay-menu {
     position: fixed;
-    left: 10px;
-    height: 3rem;
-    width: 3rem;
+    top: 28%;
+    left: 3%;
+    height: 2.25rem;
+    width: 2.25rem;
   }
 
   #view-mode-toggle {
     position: fixed;
-    top: 80px;
-    left: 10px;
-    height: 3rem;
-    width: 3rem;
+    top: 43%;
+    left: 3%;
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+
+  #git-hub-icon {
+    position: fixed;
+    top: 58%;
+    left: 3%;
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+
+  #linkedin-icon {
+    position: fixed;
+    top: 71%;
+    left: 3%;
+    height: 2.25rem;
+    width: 2.25rem;
   }
 
 }
