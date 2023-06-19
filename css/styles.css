@@ -19,6 +19,11 @@ body {
   margin: 2rem;
 }
 
+.profile-pic { 
+  width: 400px;
+  border-radius: 5%;
+}
+
 /* the overlay (background) */
 /* overlay menu button*/
 #overlay-menu {
@@ -164,7 +169,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 800px;
+  height: 600px;
   font-weight: bolder;
 }
 
@@ -194,7 +199,7 @@ ul li::before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 800px;
+  height: 600px;
   font-weight: bolder;
   text-align: left;
 }
